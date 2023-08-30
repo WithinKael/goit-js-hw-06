@@ -12,3 +12,21 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+ 
+function newItem(array) {
+  const myList = document.querySelector('.gallery');  // поиск UL
+  myList.style.listStyle = "none";
+  myList.style.display = "flex";
+  myList.style.color = "purple";
+  
+  const markup = array.map((image) => `<li><img src="${image.url}" alt="${image.alt}"></li>`).join(''); //Создание img
+  myList.insertAdjacentHTML('afterbegin', markup);
+  console.log(myList);
+  
+}
+
+newItem(images);
+
+
+
