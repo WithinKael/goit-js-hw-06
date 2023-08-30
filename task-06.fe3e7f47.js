@@ -1,0 +1,2 @@
+!function(){var a=document.querySelector("#validation-input");a.addEventListener("blur",(function(i){var e=Number(a.dataset.length),l=a.value.length;if(""===a.value)return console.log("Введіть літери!"),void a.classList.remove("valid","invalid");l>=e?(a.classList.add("valid"),a.classList.remove("invalid")):(a.classList.add("invalid"),a.classList.remove("valid"))}))}();
+//# sourceMappingURL=task-06.fe3e7f47.js.map
